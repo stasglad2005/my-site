@@ -1,0 +1,99 @@
+.main-box{
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-right: 50px;
+    background-color: #a8a7a750;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.main-box header {
+    text-align: center;
+    padding: 20px;
+}
+.form-data{
+    margin-bottom: 15px;
+}
+input, select, optgroup, option, textarea{
+    color: #383838;
+}
+span{
+    color: #c22918;
+}
+form{
+    width: 60%;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #363636;
+    outline: none;
+}
+input, #group{
+    cursor: pointer;
+}
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+label{
+    font-size: 1.1em;
+    color: #b3b3b3;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.submit-btn {
+    background-color: #3a6927;
+    color: white;
+    flex: 2;
+}
+.reset-btn {
+    background-color: #581b14;
+    color: white;
+    flex: 1;
+}
+.reset-btn:hover {
+    background-color: #9c2f23;
+}
+.required {
+    color: #a1372b;
+}
+h1{
+    color: #ffffff;
+}
+.error-message {
+    color: #991b1b;
+    font-size: 0.9em;
+    margin-top: 5px;
+    font-weight: bold;
+    display: block;
+    padding: 8px 12px;
+    background: #fee2e2;
+    border-left: 4px solid #dc2626;
+    border-radius: 4px;
+}

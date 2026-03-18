@@ -1,0 +1,177 @@
+.main-box {
+    max-width: 30vw;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #cac6c650;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.main-box header {
+    text-align: center;
+    padding: 10px;
+}
+input,
+select,
+optgroup,
+option,
+textarea {
+    color: #383838;
+}
+span {
+    color: #c22918;
+}
+.form-data {
+    margin-bottom: 15px;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #363636;
+    outline: none;
+}
+label {
+    font-size: 1.1em;
+    color: #b3b3b3;
+}
+textarea{
+    min-height: 100px;
+    resize: vertical;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+button {
+    padding: 20px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.submit-btn {
+    background-color: #3a6927; 
+    color: white;
+    flex: 2;
+}
+.submit-btn:hover {
+    background-color: #2a9226;
+}
+.reset-btn {
+    background-color: #581b14;
+    color: white;
+    flex: 1;
+}
+.reset-btn:hover {
+    background-color: #9c2f23;
+}
+.required {
+    color: #a1372b;
+}
+h1 {
+    color: #ffffff;
+}
+.calendar {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+    background: #e69e17;
+}
+
+.calendar table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.calendar th,
+.calendar td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #080808;
+    cursor: pointer;
+    /* Указывает на кликабельность */
+}
+
+.calendar th {
+    background: #cf13b0;
+    color: #fdfcfc;
+    /* Цвет заголовка */
+}
+#prev-month{
+    float: left;
+}
+#next-month {
+    float: right;
+}
+.month-name{
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+}
+td{
+    background: #239c78;
+    color: #ffffff;
+}
+td:hover{
+    background: #963030;
+}
+#prev-month, #next-month{
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #ffffff;
+}
+#prev-month:hover, #next-month:hover{
+    background: #999898;
+}
+#year-select{
+    height: 40px;
+    width: 80px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border: none;
+}
+.error-message {
+    color: #991b1b;
+    font-size: 0.9em;
+    margin-top: 5px;
+    font-weight: bold;
+    display: block;
+    padding: 8px 12px;
+    background: #fee2e2;
+    border-left: 4px solid #dc2626;
+    border-radius: 4px;
+}
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}

@@ -1,0 +1,22 @@
+.main-box header {
+    text-align: center;
+    padding: 20px;
+}
+.main-box table{
+    border-collapse: collapse;
+}
+td, th{
+    border: 2px solid #ddd0d0;
+    padding: 10px;
+    text-align: center;
+    color: #ddd0d0;
+}
+.subject{
+    text-align: left;
+}
+th{
+    font-size: 1.1em;
+}
+h1, h2{
+    color: #ffffff;
+}

@@ -1,0 +1,179 @@
+.nav-menu {
+    width: 25vw;
+    margin: 30px auto;
+    background-color: rgb(207, 212, 211);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-menu h1 {
+    margin-bottom: 15px;
+    font-size: 1.6em;
+    color: #0b2035;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-list li a {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: rgb(158, 84, 35);
+}
+
+/* ========== Секции (хобби, фильмы, книги, машины) ========== */
+#hobby,
+#film,
+#book,
+#car {
+    width: 80vw;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: rgb(207, 212, 211);
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid #0f3460;
+}
+
+#hobby h2,
+#film h2,
+#book h2,
+#car h2 {
+    font-size: 2em;
+    color: #0b2035;
+    margin-bottom: 30px;
+    border-bottom: 3px solid rgb(158, 84, 35);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    padding: 20px;
+}
+
+/* ========== Карточка интереса ========== */
+.item-card {
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(11, 32, 53, 0.15);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== Изображения — РАЗНАЯ ВЫСОТА ПО КАТЕГОРИЯМ ========== */
+
+/* Книги (400x550 ≈ пропорция 1:1.375) */
+.item-image-book {
+    width: 100%;
+    max-width: 300px;
+    height: 410px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Фильмы (400x600 ≈ пропорция 1:1.5) */
+.item-image-film {
+    width: 100%;
+    max-width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Машины (600x300 ≈ пропорция 2:1) */
+.item-image-car {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* ========== Текст в карточке ========== */
+.item-card h3 {
+    font-size: 1.3em;
+    color: rgb(70, 39, 39);
+    margin: 10px 0;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-card p {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ========== Текст хобби ========== */
+#hobby p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+/* ========== Подменю (если используется) ========== */
+#interests-menu {
+    display: none;
+    position: absolute;
+    background-color: #0b2035;
+    border: 1px solid #ccc;
+    width: 225px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+#interests-menu li {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#interests-menu li:last-child {
+    border-bottom: none;
+}
+
+#interests-menu li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-decoration: none;
+}
+
+#interests-menu li a:hover {
+    color: rgb(158, 84, 35);
+}
