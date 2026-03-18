@@ -1,24 +1,35 @@
-*.log
-.DS_Store
+# 🔐 Laravel sensitive
 .env
 .env.backup
 .env.production
-.phpactor.json
 .phpunit.result.cache
-/.fleet
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
-/node_modules
+Homestead.json
+Homestead.yaml
+nhook.json
+secret
+
+# 📦 Dependencies
+/vendor/
+/node_modules/
+
+# ️ Build & IDE
 /public/build
 /public/hot
 /public/storage
 /storage/*.key
-/storage/pail
-/vendor
-Homestead.json
-Homestead.yaml
+*.log
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ️ System
+.DS_Store
 Thumbs.db
+
+# 🚫 Node.js config (чтобы Railway не думал, что это Node проект)
+package.json
+vite.config.js
+.nvmrc
+package-lock.json
