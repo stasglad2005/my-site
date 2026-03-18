@@ -1,5 +1,9 @@
 [phases.setup]
+<<<<<<< HEAD
 nixPkgs = ["php84", "php84Packages.composer"]
+=======
+nixPkgs = ["php82", "php82Packages.composer", "nginx"]
+>>>>>>> 1353fb8f75aa85ac03abe45a8247bd4ee0acff32
 
 [phases.install]
 cmds = ["composer install --no-dev --optimize-autoloader"]
